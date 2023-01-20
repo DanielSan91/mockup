@@ -1,0 +1,148 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+
+.related{
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.related li{
+    margin-right: 15px;
+    color: violet;
+}
+
+.related li:first-of-type{
+    color: black;
+}
+
+.container {
+    padding: 30px;
+    width: 1000vw;
+}
+
+
+.filters {
+    margin-top: autos;
+    justify-content: space-between; /*mettere around */
+}
+
+.filters ul, .filters {
+    display: flex;
+    align-items: center;
+}
+
+
+.filters ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.filters ul li:last-of-type {
+    border-radius: 10px;
+    background-color: gainsboro;
+    font-weight: 600;
+}
+
+
+.filters div{
+    padding: 12px 18px;
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+.filters div:last-of-type{
+    padding: 10px 15px;
+    border: 1px solid rgb(216,216,216 );
+}
+
+.filters div:first-of-type {
+    padding-right: 48px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    margin-bottom: 20px;
+   
+
+}
+
+.card-image {
+    position: relative;
+  
+}
+
+.card-image div {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 23px;
+    background-color: #999;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}
+.card img{
+    width: 320px;
+    height: 255px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info div:first-of-type i{
+    color: #999;
+    font-size: 32px;
+}
+
+.card-info div:nth-child(2) span:first-of-type{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.card-info div:nth-child(2) span:last-of-type{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: white;
+    background-color: rgb rgb(202, 202, 202);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.card-info div:nth-child(3) i {
+    color: #999;
+}
+
+.card-info div:nth-child(3) span {
+    font-weight: 600;
+}
+
+.card div:first-of-type {
+    align-self: flex-start;
+}
