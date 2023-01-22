@@ -1,4 +1,4 @@
- *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body{
 
 h1{
     font-size: 2em;
-    margin: 0;
+    margin: 12px;
 }
 
 
@@ -35,11 +35,17 @@ h1{
 
 .container {
     padding: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 1240px;
+    left: 40px;
+    position: absolute;
+    right: 40px;
 }
 
 
 .filters {
-    margin-top: autos;
+    margin-top: auto;
     justify-content: space-between; /*mettere around */
 }
 
@@ -75,79 +81,80 @@ h1{
     padding-right: 48px;
 }
 
-.card-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: normal ;
-    align-items: center;
-}
-
-.card{
+.card {
     margin-bottom: 20px;
-    position: absolute;
+    position: relative;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 982px;
-    height: 2440px;
-
+    margin-top: 30px;
 }
 
-.card-image {
-    position: absolute;
-  
-}
-
-.card-image div {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 23px;
-    background-color: #999;
-    padding: 8px;
-    border-radius: 8px;
-    color: white;
-}
-.card img{
-    width: 320px;
-    height: 255px;
-    border-radius: 8px;
-    margin: 10px;
+.card img {
+    width: 250px;
+    height: 190px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .card-info {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.card-info div:first-of-type i{
-    color: #999;
-    font-size: 32px;
+.card-info img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 10px;
 }
 
-.card-info div:nth-child(2) span:first-of-type{
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
-.card-info div:nth-child(2) span:last-of-type{
-    font-size: 0.9em;
-    font-weight: 600;
-    color: white;
-    background-color: rgb rgb(202, 202, 202);
-    padding: 3px;
-    border-radius: 3px;
+.card-info div:first-of-type i {
+    color: #6e6d7a;
+    font-size: 22px;
 }
 
 .card-info div:nth-child(3) i {
-    color: #999;
+    color: #6e6d7a;
+    font-size: 12px;
+}
+
+
+.card-info span:first-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-info div:nth-child(2) span:last-child {
+    background-color: #cccccc;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 1.2px;
+    border-radius: 3px;
+    margin: 10px;
 }
 
 .card-info div:nth-child(3) span {
+    color: black;
+    font-size: 11px;
     font-weight: 600;
 }
 
-.card div:first-of-type {
-    align-self: flex-start;
+.card-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    color: hsla(0, 0%, 71%, 0.769);
+}
+
+.fa-copy:hover{
+    color: red;
+    cursor: pointer;
 }
