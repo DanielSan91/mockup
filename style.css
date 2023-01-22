@@ -1,8 +1,8 @@
-/* *{
+ *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}*/
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +35,6 @@ h1{
 
 .container {
     padding: 30px;
-    width: 1000vw;
 }
 
 
@@ -78,18 +77,24 @@ h1{
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: normal ;
+    align-items: center;
 }
 
 .card{
     margin-bottom: 20px;
-   
+    position: absolute;
+    justify-content: space-between;
+    width: 982px;
+    height: 2440px;
 
 }
 
 .card-image {
-    position: relative;
+    position: absolute;
   
 }
 
